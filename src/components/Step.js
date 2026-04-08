@@ -4,11 +4,12 @@ import './../styles/App.css';
 const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }) => {
 
     return (
-        <div>
+        <div className="form-box">
 
             {/* STEP 1 */}
             {step === 1 && (
-                <>
+                <div id="step1">
+                
                     <h3>Customer Details</h3>
                     <label htmlFor="first_name">First Name:</label>
                     <input
@@ -27,12 +28,12 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
                     />
 
                     <button onClick={nextStep}>Next</button>
-                </>
+                </div>
             )}
 
             {/* STEP 2 */}
             {step === 2 && (
-                <>
+                <div id="step2">
                     <h3>Car Details</h3>
                     <label htmlFor="model">Model:</label>
                     <input
@@ -51,12 +52,12 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
 
                     <button onClick={prevStep}>Previous</button>
                     <button onClick={nextStep}>Next</button>
-                </>
+                </div>
             )}
 
             {/* STEP 3 */}
             {step === 3 && (
-                <>
+                <div id="step3">
                     <h3>Payment Details</h3>
                      <label htmlFor="card_info">Credit Card Number:</label>
                     <input
@@ -75,7 +76,7 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
 
                     <button onClick={prevStep}>Previous</button>
                     <button onClick={handleSubmit}>Submit</button>
-                </>
+                </div>
             )}
 
         </div>

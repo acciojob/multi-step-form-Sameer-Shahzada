@@ -30,7 +30,7 @@ const App = () => {
   };
 
   return (
-    <div className="form-box">
+    <div>
       <Step
         step={step}
         formData={formData}
