@@ -15,12 +15,20 @@ const App = () => {
     expiry_date: ""
   });
 
+  // const nextStep = () => {
+  //   setStep(prev => prev + 1);
+  // };
+
+  // const prevStep = () => {
+  //   setStep(prev => prev - 1);
+  // };
+
   const nextStep = () => {
-    setStep(prev => prev + 1);
+    setStep(prev => Math.min(prev + 1, 3));
   };
 
   const prevStep = () => {
-    setStep(prev => prev - 1);
+    setStep(prev => Math.max(prev - 1, 1));
   };
 
   const handleChange = (e) => {
