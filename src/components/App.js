@@ -15,8 +15,13 @@ const App = () => {
     expiry_date: ""
   });
 
-  const nextStep = () => setStep(prev => prev + 1);
-  const prevStep = () => setStep(prev => prev - 1);
+  const nextStep = () => {
+    setStep(prev => prev + 1);
+  };
+
+  const prevStep = () => {
+    setStep(prev => prev - 1);
+  };
 
   const handleChange = (e) => {
     setFormData({

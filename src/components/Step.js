@@ -27,7 +27,7 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
                         onChange={handleChange}
                     />
 
-                    <button onClick={nextStep}>Next</button>
+                    <button type="button" onClick={nextStep}>Next</button>
                 </div>
             )}
 
@@ -50,8 +50,8 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
                         onChange={handleChange}
                     />
 
-                    <button onClick={prevStep}>Previous</button>
-                    <button onClick={nextStep}>Next</button>
+                    <button type="button" onClick={prevStep}>Previous</button>
+                    <button type="button" onClick={nextStep}>Next</button>
                 </div>
             )}
 
@@ -74,8 +74,8 @@ const Step = ({ step, formData, handleChange, nextStep, prevStep, handleSubmit }
                         onChange={handleChange}
                     />
 
-                    <button onClick={prevStep}>Previous</button>
-                    <button onClick={handleSubmit}>Submit</button>
+                    <button type="button" onClick={prevStep}>Previous</button>
+                    <button type="button" onClick={handleSubmit}>Submit</button>
                 </div>
             )}
 
